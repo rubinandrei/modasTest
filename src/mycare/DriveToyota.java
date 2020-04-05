@@ -13,9 +13,9 @@ public class DriveToyota {
         //myToyota.setHand_brake(false);
         myToyota.setTransmission((short) 2);
         myToyota.setPedalStop(true);
-
-        myToyota.turnON_OF();
         myToyota.setHand_brake(true);
+        myToyota.turnON_OF();
+      //  myToyota.setHand_brake(true);
 
 
 
