@@ -1,0 +1,13 @@
+/classes
+/.project
+/.classpath
+/.settings
+/*.iml
+/target
+/.idea
+/bin
+/log4j
+/screenShots
+/*.log
+/.checkstyle
+/out
