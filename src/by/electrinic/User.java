@@ -7,7 +7,7 @@ public class User {
         System.out.println(electroniq.toString());
     }
 
-    public static void printPrice(boolean toStr, Elctronic electroniq){
+    public static void printPrice(boolean toStr, Electroniq electroniq){
         if(toStr)
             System.out.println(electroniq.toString());
         else{

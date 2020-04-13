@@ -1,6 +1,6 @@
 package by.electrinic;
 
-public class GameBox extends Elctronic implements IElectroniq{
+public class GameBox extends Electroniq implements IElectroniq{
     private String name;
     private Double price;
 

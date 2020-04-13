@@ -1,6 +1,6 @@
 package by.electrinic;
 
-public abstract class Elctronic {
+public abstract class Electroniq {
     private boolean power;
     abstract void setOn();
     abstract void senOff();

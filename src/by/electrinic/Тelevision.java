@@ -1,6 +1,6 @@
 package by.electrinic;
 
-public class Тelevision extends Elctronic implements IElectroniq{
+public class Тelevision extends Electroniq implements IElectroniq{
 
 
     private String name;
