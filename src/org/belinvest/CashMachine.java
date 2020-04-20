@@ -4,8 +4,8 @@ import java.util.Scanner;
 
 public class CashMachine {
 
-    private int [] cardNamber = {123345667, 457678436, 654456789 };
-    private int [] cardsPin =   {     1111,      4444,      5678 };
+
+    private int [][][] cardNamber = {{{123345667,1111,10000}}, {{457678436,4444}},{{654456789,5678}}};
     private int [] cardsSumm =  {    10000,       500,      1000 };
     private int cashMachineSumm = 150000;
     private int indexCards;
@@ -26,19 +26,20 @@ public class CashMachine {
     }
 
     public void setCardNamber(int cardNamber){
-        for (int i =0; i < this.cardNamber.length; i++){
-            if(this.cardNamber[i] == cardNamber) {
+        for (int i =0, y=0, z=0; i < this.cardNamber.length; y=z=i++){
+            int aa = this.cardNamber[i][y][z];
+           /* if(this.cardNamber[i] == cardNamber) {
                 this.isCardValid = true;
                 setPin(i);
                 return;
-            }
+            }*/
         }
         this.isCardValid = false;
         infoErrInfo("Ваша карта не валидна \n вставте новую карту в банкомат");
     }
 
     private void setPin(int i){
-        infoPanel("Введите пин (4-е цыфры )... ");
+   /*     infoPanel("Введите пин (4-е цыфры )... ");
         Scanner scanner = new Scanner(System. in);
         int inputString = scanner.nextInt();
         if(this.cardsPin[i] == inputString) {
@@ -51,7 +52,7 @@ public class CashMachine {
         }else{
             this.isPinValid = false;
             infoErrInfo("Пин не принят \n");
-        }
+        }*/
     }
     public void Balance(){
         infoPanel("Балан равен " + this.cardsSumm[this.indexCards]);

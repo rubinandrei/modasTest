@@ -4,6 +4,9 @@ public class Тelevision extends Electroniq implements IElectroniq{
 
 
     private String name;
+
+
+
     private Double price;
     private int diagonal;
 
@@ -25,6 +28,9 @@ public class Тelevision extends Electroniq implements IElectroniq{
 
     @Override
     public Double getPrice() {
+        if(price < 1.0)
+            throw new RuntimeException("Для нищебродов");
+
         return price;
     }
 
@@ -41,5 +47,10 @@ public class Тelevision extends Electroniq implements IElectroniq{
                 ", diagonal=" + diagonal +
                 ", power=" + super.isPower() +
                 '}';
+    }
+
+    public Тelevision setPrice(Double price) {
+        this.price = price;
+        return this;
     }
 }
